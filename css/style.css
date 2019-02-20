@@ -1,90 +1,92 @@
 /* --------------- reset.css --------------- */
+
 html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i,  dl, dt, dd, ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;                               /* обнуляем отступы и убираем бордюры */
-    vertical-align: baseline;          /* приводим все к одной базовой линии */
-    background: transparent;      /* чтобы не проскакивали левые фоны, установленные по умолчанию */
-    font-size: 100%;                     /* размер шрифта всем одинаковый */
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;                               /* обнуляем отступы и убираем бордюры */
+	vertical-align: baseline;          /* приводим все к одной базовой линии */
+	background: transparent;      /* чтобы не проскакивали левые фоны, установленные по умолчанию */
+	font-size: 100%;                     /* размер шрифта всем одинаковый */
 }
-a {                                              /* ссылка не в общем списке чтобы не сбрасывать outline по умолчанию */
-    margin:0;
-    padding:0;
-    font-size:100%;
-    vertical-align:baseline;
-    background:transparent;
-    outline:none;
+a {                                      	     /* ссылка не в общем списке чтобы не сбрасывать outline по умолчанию */
+	margin:0;
+	padding:0;
+	font-size:100%;
+	vertical-align:baseline;
+	background:transparent;
+	outline:none;
 }
-table {                     /* устраняем отступы между ячейками таблицы */
-    border-collapse: collapse;
-    border-spacing: 0;
+table {						/* устраняем отступы между ячейками таблицы */
+	border-collapse: collapse; 
+	border-spacing: 0;
 }
 td, td img {
-    vertical-align: top;            /* возвращаем привычное вертикальное выравнивание */
-}
+	vertical-align: top;			/* возвращаем привычное вертикальное выравнивание */
+} 
 input, select, button, textarea {
-    margin: 0;              /* убираем отступы по умолчанию для элементов форм (в частности для checkbox и radio) */
-    font-size: 100%;            /* делаем размер шрифтов везде одинаковым */
-    outline: none;
+	margin: 0; 				/* убираем отступы по умолчанию для элементов форм (в частности для checkbox и radio) */
+	font-size: 100%; 			/* делаем размер шрифтов везде одинаковым */
+	outline: none;
 }
 input[type="text"], input[type="password"], textarea {
-    padding: 0;                 /* убираем внутренние отступы для текстовых полей */
+	padding: 0; 				/* убираем внутренние отступы для текстовых полей */
 }
-input[type="checkbox"] {        /* вертикальное выравнивание чекбоксов и радиобатонов относительно меток */
-    vertical-align: bottom;
+input[type="checkbox"] { 		/* вертикальное выравнивание чекбоксов и радиобатонов относительно меток */
+	vertical-align: bottom;
 }
 input[type="radio"] {
-    vertical-align: text-bottom;
+	vertical-align: text-bottom;
 }
 sub {
-    vertical-align: sub;
-    font-size: smaller;
+	vertical-align: sub;
+	font-size: smaller;
 }
 sup {
-    vertical-align: super;
-    font-size: smaller;
+	vertical-align: super;
+	font-size: smaller;
 }
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-    display:block;
+	display:block;
 }
 nav ul {
-     list-style:none;
+	 list-style:none;
 }
 /* --------------- /reset.css --------------- */
 
 /* --------------- базовые настройки ---------*/
 html {
-    min-height:100%; /* всегда показываем вертикальную полосу прокрутки  */
+	min-height:100%; /* всегда показываем вертикальную полосу прокрутки  */
 }
 body {
-    color: #606060;
-    text-align: left;
-    font-size: 1em; /* используем безопасные шрифтовые CSS стеки */
-    min-height:100%;
-    font-family: 'Open Sans', sans-serif;
+	color: #7e7f84;
+	text-align: left;
+	font-size: 1em; /* используем безопасные шрифтовые CSS стеки */
+	min-height:100%;
+	font-family: "Arial", sans-serif; /*font-family: 'Roboto Condensed', sans-serif;*/
+	
 }
 a, a:visited { /* порядок правил для ссылок имеет значение */
-    color: #339933;
-    text-decoration: underline;
+	color: #f45a40;
+	text-decoration: underline;
 }
 a:hover {
-    color: #339933;
-    text-decoration:none;
+	color: #f45a40;
+	text-decoration:none;
 }
 a:focus, a:active {
-    color: #339933;
-    text-decoration: underline;
+	color: #f45a40;
+	text-decoration: underline;
 }
 h1, h2, h3, h4, h5, h6{
-    font-weight:normal;
+	font-weight:normal;
 }
 img{
 
-    max-width:100%;
+	max-width:100%;
 }
 .clr{
-    clear:both;
+	clear:both;
 }
 .clearfix:after {
     clear: both;
@@ -93,89 +95,142 @@ img{
 }
 /* --------------- /базовые настройки ---------*/
 
-header{
-    background:#fff; overflow:hidden;
-}
-.logo-box {
-    font-size: 36px;
-    font-weight: 600;
-    float: left;
-    margin: 0px 0 0 10px;
-}
-header h1{
-        font-size:1.75em; text-transform:uppercase; font-weight:600; line-height:1.1; margin:0 0 40px 20px; color:#4f4e4e;
-    }
-header h2{font-size:0.75em; text-transform:uppercase; font-weight:600; line-height:1.1; margin:0 0 40px 20px; color:#4f4e4e;background: #ddecf7;
-}
-
-.main-menu {
-    padding: 25px 0 0 25px;
-    float: left;
-}
-
 .center-block-main{
-        margin: 0 auto; max-width:990px;
-    }
-    .logo{
-	margin:0 auto 20px auto; display:block; float:left;
+	max-width:1170px; margin:0 auto;
 }
-    .manu{
-        float:right;
-    }
-    .manu li{
-        float:left; font-weight:600;
-    }
-    .manu li a{
-        color:#bdbbbf; text-decoration:none; padding:50px 35px; display:block; border-bottom:3px solid #eae9eb;
-    }
-    .manu li a:hover{
-        color:#58c93a; border-bottom:3px solid #58c93a;
-    }
-.content{
-    border-right:1px solid #eae9eb; border-left:1px solid #eae9eb;
+.header-top{
+	padding:30px 0; border-bottom:1px solid #eee;
 }
 
+	.logo{
+		float:left; font-size:1.375em; font-family: "Arial", sans-serif; font-weight:600; text-shadow: 2px 2px 0 #cccccc; color: #618ad2;
+	}
+	.logo1{
+		float:right;
+	}
+		.logo1 h1{
+			float:left; font-size:1.375em; font-weight:600;
+		}
+			
 
-/* -------------main --------------------*/
-.cont-tabs {
-    position: relative;
+.header-menu{
+	padding:10px 0;margin-bottom:30px;
 }
-main{
-    float:left; width:100%; margin-top:70px;
+	.menu{
+		float:left;
+	}
+		.menu li{
+			float:left; text-transform:uppercase; margin-right:30px; font-size:0.875em; margin-bottom: 10px;
+		}
+			.menu li a{
+				color:#7e7f84; text-decoration:none;
+			}
+			.menu li a:hover{
+				color:#f45a40;
+			}
+.block3-section{
+	margin-bottom:50px;
 }
+	.block3-section article{
+		width:31.6%; float:left; margin-left:2.6%; display:block;
+	}
+	.block3-section article:first-child{
+		margin-left:0;
+	}
+	.block3-section article img{
+		display:block; margin:0 auto 20px auto;
+	}
+	.block3-section article h2{
+		font-family: "Arial", sans-serif; font-size:1.375em; margin-bottom:20px;
+	}
+	.block3-section article p{
+		font-size:0.875em; padding-top:10px;
+	}
+	.block3-section footer{
+		padding-top:10px;
+	}
+summary > span {
+     margin-left:-1.1em;
+     background:#fff;
+     cursor:pointer; /*меняем курсор для красоты*/
+   }	
+.ftr{
+	background:#2a2d34; padding:40px 0;
+}
+	.ftr h2{
+		color:#fff; font-size:1.325em; font-family: "Arial", sans-serif; margin-bottom:10px; text-transform:uppercase;
+	}
+	.ftr p{
+		font-size:0.875em; margin-bottom:20px;
+	}
+	
+	.ftr h3{
+		font-size:0.875em; margin-bottom:10px;
+	}
+		.ftr h3 a{
+			color:#fff; text-decoration:none;
+		}
+		.ftr h3 a:hover{
+			text-decoration: underline;
+		}
+aside{
+    float:right; width:28.3%; margin-top:70px;
+}
+    .widget{
+        margin-bottom:50px;
+    }
+    .widget h2{
+        text-transform:uppercase; color:#6c6969; background:#f8f8f8; border-left:2px solid #58c93a; padding:10px 20px; font-weight:600; margin-bottom:20px;
+    }
+    
+    .widget nav{
+        margin:0 0 10 20px;
+    }
+    
     article{
         margin-bottom:70px;
     }
     article>header{
         font-size:0; background:none; margin-bottom:10px; position:relative;
     }
-    .publish{
-        font-size:13px; background:rgba(0,0,0,0.6); color:#fff; position:absolute; bottom:-60px; padding:10px 20px; width:100%; box-sizing: border-box;
-        -webkit-transition: bottom 0.1s linear;
-        -moz-transition: bottom 0.1s linear;
-        -o-transition: bottom 0.1s linear;
-        transition: bottom 0.1s linear;
-    }
-    article>header:hover .publish{
-        bottom:0;
-    }
+   
     article>h2{
         font-size:1.75em; text-transform:uppercase; font-weight:600; line-height:1.1; margin:0 0 40px 20px; color:#4f4e4e;
     }
     article>p{
         margin:0 0 20px 20px; line-height:1.3;
     }
-    a.more{
-        border:2px solid #c2c2c2; color:#c2c2c2; padding:7px 20px; display:inline-block; border-radius:20px; text-decoration:none;
-        -webkit-transition:all 0.1s linear;
-        -moz-transition:all 0.1s linear;
-        -o-transition:all 0.1s linear;
-        transition:all 0.1s linear;
+main{
+    float:left; width:62.5%; margin-top:70px;
+}
+.main1{
+    float:left; width:100%; margin-top:70px;
+}
+    .aside-menu li{
+            float:left; text-transform:uppercase; margin-right:30px; font-size:0.875em;padding-bottom:5px;margin-bottom: 10px;
+        }
+            .aside-menu a{
+                color:#7e7f84; text-decoration:none; display: block; padding: 8px 14px; border: 1px solid #e5e5e5; margin-bottom: -1px;
+            }
+            .aside-menu a:hover{
+                background-color: #f5f5f5;
+            }
+            .aside-menu .active a {
+                color: white;
+                background-color: #0088cc;
+            }
+    .pager{
+        border-top:1px solid #e1e0e0; font-size:0.8125em; text-transform:uppercase; font-weight:600; padding:30px;
     }
-    a:hover.more{
-        color:#339933; border-color:#339933;
-    }
-	
+        .pager a{
+            color:#818181; text-decoration:none;
+        }
+        .pager a:hover{
+            text-decoration:underline;
+        }
+        .home-link{
+            text-align:center;
+        }
 	.article-post {
     display: block;
     border: 1px solid #d5d5d5;
@@ -200,3 +255,98 @@ main{
     -moz-border-radius: 7px;
     -webkit-border-radius: 7px;
 }
+@media screen and (max-width:835px){
+main{
+    float:none; width:90%; display:table;  margin:10px 5px 10px 5px;
+}
+aside{
+    float:none; width: 90%; display:table;  margin:0 auto;
+}
+.aside-menu a{
+                margin-bottom: 5px;
+            }
+}
+@media screen and (max-width:810px){
+	.block3-section article{
+		width:95%; float:none; margin:2.5% 2.5% 10px 2.5%;
+	}
+	.block3-section article:first-child{
+		 margin:2.5% 2.5% 10px 2.5%;
+	}
+
+}
+@media screen and (max-width:634px){
+aside{
+    float:none; display:table;  margin:0 auto;
+}
+}	
+
+@media screen and (max-width:600px){
+	.block3-section article{
+		width:95%; float:none; margin:0 2.5% 30px 2.5%;
+	}
+	.block3-section article:first-child{
+		 margin:0 2.5% 30px 2.5%;
+	}
+
+}
+@media screen and (max-width:480px){
+
+	.block4-main article{
+			width:95%; margin:0 2.5% 30px 2.5%; float:none; overflow:hidden;
+		}
+		.block4-main article:first-child{
+			width:95%; margin:0 2.5% 30px 2.5%; float:none;
+		}
+
+}
+@media screen and (max-width:430px){
+aside{
+    float:none; display:table;  margin:0 auto;
+}
+.logo{
+        float:none; text-align:center; margin-bottom:10px; display:table; margin:0 auto;
+    }
+    .logo1{
+        float:none; text-align:center; margin-bottom:10px; display:table; margin:0 auto;
+    }
+    
+}
+@media screen and (max-width:410px){
+	.header-top{
+		padding:10px 0;
+	}
+	.logo{
+		float:none; text-align:center;  display:table; margin:0 auto;
+	}
+	.logo1{
+		float:none; text-align:center; display:table; margin:0 auto;
+	}
+
+
+}
+@media screen and (max-width:360px){
+
+	
+}	
+
+
+.clr{
+    clear:both;
+}
+
+    .pager{
+        border-top:1px solid #e1e0e0; font-size:1.125em; text-transform:uppercase; font-weight:300; padding:30px;
+    }
+        .pager a{
+            color:#818181; text-decoration:none;
+        }
+        .pager a:hover{
+            text-decoration:underline;
+        }
+        .previous-link{
+            float:left;
+        }
+        .next-link{
+            float:right;
+        }
