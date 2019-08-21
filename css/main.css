@@ -35,7 +35,7 @@ and open the template in the editor.
             .bgimg-1 {
                 background-position: center;
                 background-size: cover;
-                background-image: url("../images/mac.jpg");
+                background-image: url("http://dagmatritsa.ru/images/mac.jpg");
                 min-height: 100%;
             }
             .bgimg-2 {
